@@ -4,9 +4,13 @@ import { SliderPickerComponent } from './slider-picker/slider-picker.component';
 import { CalendarPickerComponent } from './calendar-picker/calendar-picker.component';
 
 @NgModule({
-  declarations: [DateRangePickersComponent, SliderPickerComponent, CalendarPickerComponent],
-  imports: [
+  declarations: [
+    DateRangePickersComponent,
+    CalendarPickerComponent,
+    SliderPickerComponent
   ],
-  exports: [DateRangePickersComponent]
+  imports: [],
+  exports: [DateRangePickersComponent],
+  entryComponents: [CalendarPickerComponent, SliderPickerComponent]
 })
-export class DateRangePickersModule { }
+export class DateRangePickersModule {}
