@@ -1,15 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { DateRangePicker } from '../shared';
 
 @Component({
   selector: 'drp-calendar-picker',
   templateUrl: './calendar-picker.component.html',
   styleUrls: ['./calendar-picker.component.css']
 })
-export class CalendarPickerComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
+export class CalendarPickerComponent extends DateRangePicker {}

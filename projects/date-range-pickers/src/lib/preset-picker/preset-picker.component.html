@@ -1,0 +1,5 @@
+<mat-radio-group class="preset-radio-group">
+  <mat-radio-button *ngFor="let preset of presets" [value]="preset.range">
+    {{ preset.label }}
+  </mat-radio-button>
+</mat-radio-group>
